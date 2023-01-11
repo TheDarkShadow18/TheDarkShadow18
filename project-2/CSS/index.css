@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#logo{
+    margin: 8px 22px;
+}
+#logo img{
+    height: 38px;
+    margin: 3px 5px;
+    border-radius: 10px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    height: 700px;
+}
+#home::before{
+    background: url(/hors-doeuvre-2175326_1920.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.h-primary{
+    font-size: 3.8rem;
+    color: black;
+}
+#home h1{
+    padding: 12px;
+}
+#home p{
+    font-size: 1.6rem;
+    color: black;
+}
+.btn{
+    color: white;
+    background-color: brown;
+    margin: 20px;
+    border: 1px solid white;
+    padding: 12px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn:hover{
+    color: blue;
+    background-color: white;
+}
+.center{
+    text-align: center;
+}
+.h-secondry{
+    font-size: 2.8rem;
+    color: black;
+}
+#services{
+    margin: 36px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid brown;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+#services{}
+#services{}
+#services{}

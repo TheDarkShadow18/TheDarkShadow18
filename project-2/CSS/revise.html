@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/favicon/android-chrome-192x192.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .navbar::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .nav{
+            display: flex;
+        }
+        .logo{
+            padding: 10px 15px;
+        }
+        .logo img{
+            width: 56px;
+            padding: 3px 5px;
+        }
+        .nav li{
+            list-style: none;
+        }
+        .nav li a{
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 1.3rem;
+        }
+        .nav li a:hover{
+            color: black;
+            background-color: white;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+        }
+        .main::before{
+            background: url(/hors-doeuvre-2175326_1920.jpg) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="/logo.png" alt="pizzabay.com">
+        </div>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+    <div class="main">
+
+    </div>
+</body>
+</html>
